@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="code">
+            <div class="upper">
+                <div class="code_text">Код программы</div>
+                <button>Запустить</button>
+            </div>
+            <div class="txt" contenteditable="plaintext-only">Программа
+Ввод текста 1 : а123 = (2 + 3) * 2 + [1 - 11] ^ 2;
+Ввод текста 2 : б123 = а123 + 2^3;
+Конец</div>
+
+            <div class="res_text">Результат</div>
+            <div class="error"></div>
+        </div>
+        <div class="right">
+            <div class="lang-text">Форма Бэкуса-Наура</div>
+            <div class="lang">Язык = "Программа" Звенья "Конец"<br>
+Звенья = Звено ";" ... Звено<br>
+Звено = "Ввод текста" Оператор ";" ... Оператор<br>
+Оператор = Метка ... Метка ":" Переменная "=" Правая часть<br>
+Правая часть = </"-"/> Блок Знак1 ... Блок<br>
+Знак1 = "+" ! "-"<br>
+Блок = Часть Знак2 ... Часть<br>
+Знак2 = "*" ! "/"<br>
+Часть = Кусок "^" ... Кусок<br>
+Кусок = Переменная ! Целое ! "(" Правая часть ")" ! "[" Правая часть "]"<br>
+/// Глубина вложенности [ ] до 2 ///<br>
+Переменная = Буква Цифра Цифра Цифра<br>
+Метка = Целое<br>
+Целое = Цифра ... Цифра<br>
+Буква = "А" ! "Б" ! "В" ! ... ! "Я"<br>
+Цифра = "0" ! "1" ! "2" ! ... ! "7"</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
